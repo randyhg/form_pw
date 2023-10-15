@@ -1,0 +1,9 @@
+CREATE TABLE nilai (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    tugas1 FLOAT NOT NULL,
+    tugas2 FLOAT NOT NULL,
+    tugas3 FLOAT NOT NULL,
+    uts FLOAT NOT NULL,
+    uas FLOAT NOT NULL    
+);
