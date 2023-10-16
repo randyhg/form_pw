@@ -34,17 +34,17 @@
     function GradeColor($grade) {
         switch ($grade) {
             case 'A':
-                return 'text-green-500';
+                return 'color: #00FF00;'; // Green
             case 'B':
-                return 'text-orange-500';
+                return 'color: #FFA500;'; // Orange
             case 'C':
-                return 'text-orange-800';
+                return 'color: #FF5722;'; // A different shade of orange
             case 'D':
-                return 'text-pink-500';
+                return 'color: #FF1493;'; // Pink
             case 'E':
-                return 'text-red-500';
+                return 'color: #FF0000;'; // Red
             default:
-                return 'text-black';
+                return 'color: #000000;'; // Black
         }
     }
 

@@ -21,7 +21,7 @@
 <body class="font-poppins">
     
     <div class="relative min-h-screen flex items-center justify-center bg-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-no-repeat bg-cover" style="background-image: url(https://images.unsplash.com/photo-1612274048333-1bb5e987146e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1580&q=80);">
-    <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+    <div class="absolute bg-black opacity-70 inset-0 z-0"></div>
 
     <div class="flex justify-center items-center space-x-20">
         <!-- Form -->
@@ -73,7 +73,7 @@
                                         </div>
                                     </div>
                                     <div class="mt-5 text-right md:space-x-3 md:block flex flex-col-reverse">
-                                        <button class="mb-2 md:mb-0 bg-slate-800 px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-slate-600">Submit</button>
+                                        <button class="mb-2 md:mb-0 bg-slate-800 px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-slate-700">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -86,7 +86,7 @@
         <div class="rounded-md overflow-x-auto" style="max-height: 415px; min-height: 415px;">
             <div class="relative shadow-md sm:rounded-lg" style="max-height: 415px; min-height: 415px;">
                 <table class="w-auto text-sm text-left table-fixed">
-                    <thead class="text-xs text-white bg-slate-800 sticky top-0">
+                    <thead class=" text-white bg-slate-800 sticky top-0 text-m">
                         <tr>
                             <th class="px-6 py-3">
                                 No
@@ -117,7 +117,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="text-m">
                         <?php
                             $i = 1;
                             while ($result = mysqli_fetch_assoc($sqlstr)){
@@ -149,7 +149,7 @@
                                 echo $total;
                                 $grade = Grade($total); ?>
                             </td>
-                            <td class="px-6 py-4 font-bold <?php echo GradeColor($grade); ?> ">
+                            <td class="px-6 py-4 font-bold"  style=" <?php echo GradeColor($grade); ?> ;">
                                 <?php echo $grade; ?>
                             </td>
                         </tr>
