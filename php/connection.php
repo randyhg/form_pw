@@ -1,7 +1,7 @@
 <?php 
-    $server = "localhost:3309";
+    $server = "localhost";
     $username = "root";
-    $password = "password";
+    $password = "123456";
     $database = "form_nilai";
 
     $conn = mysqli_connect($server, $username, $password, $database);
