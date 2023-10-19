@@ -1,8 +1,8 @@
 <?php 
-    $server = "localhost";
-    $username = "root";
-    $password = "123456";
-    $database = "form_nilai";
+    $server = "";
+    $username = "";
+    $password = "";
+    $database = "";
 
     $conn = mysqli_connect($server, $username, $password, $database);
 
@@ -34,17 +34,17 @@
     function GradeColor($grade) {
         switch ($grade) {
             case 'A':
-                return 'color: #00FF00;'; // Green
+                return 'color: #00FF00;'; 
             case 'B':
-                return 'color: #FFA500;'; // Orange
+                return 'color: #FFA500;'; 
             case 'C':
-                return 'color: #FF5722;'; // A different shade of orange
+                return 'color: #FF5722;';
             case 'D':
-                return 'color: #FF1493;'; // Pink
+                return 'color: #FF1493;'; 
             case 'E':
-                return 'color: #FF0000;'; // Red
+                return 'color: #FF0000;'; 
             default:
-                return 'color: #000000;'; // Black
+                return 'color: #000000;'; 
         }
     }
 
